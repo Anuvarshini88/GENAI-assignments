@@ -1,0 +1,2 @@
+# GENAI-assignments
+Homeworks
