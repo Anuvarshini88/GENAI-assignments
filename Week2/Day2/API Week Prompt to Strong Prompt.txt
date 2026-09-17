@@ -1,0 +1,52 @@
+Instructions:
+- API test scenarios for user registration in an amazon application using POST method
+- [STRICT] API only - Positive and Negative status codes
+- [MANDATORY] {
+  "firstName": "",
+  "lastName": "",
+  "email": "",
+  "password": "",
+  "confirmPassword": "",
+  "phone": "",
+  "country": "",
+  "dateOfBirth": "",
+  "acceptTerms": 
+}
+
+- [CRITICAL] Mix of P1 and P2
+- [MANDATORY] Exactly 10 test data combinations
+- Then switch persona and review, adding comments
+
+Context:
+Amazon registration functionality to register new user and check if already registered user in Postman tool
+
+Example:
+TC-ID: TC001   Priority: P1
+Description: Verify the user registration fields with mandatory fields email, password, confirmPassword, dateOfBirth
+Precondition: App running; the user details entered is new and not already registered account
+Parameters: {
+  "firstName": "Aïcha",
+  "lastName": "El-Mansouri",
+  "email": "aicha.el-mansouri+test@example.com",
+  "password": "Test@Passw0rd!2026",
+  "confirmPassword": "Test@Passw0rd!2026",
+  "phone": "+212612345678",
+  "country": "Morocco",
+  "dateOfBirth": "1995-08-21",
+  "acceptTerms": true
+}
+Expected Result: Status codes and Response Json body
+:  {
+  "firstName": "",
+  "lastName": "",
+  "email": "",
+  "password": "",
+  "confirmPassword": "",
+  "phone": "",
+  "country": "",
+  "dateOfBirth": "",
+  "acceptTerms": 
+"Confirmation code"
+}
+
+Test Data: With mandatory fields, with already registered user email id, with invalid parameters values, duplicate values, optional fields
