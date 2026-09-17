@@ -1,0 +1,28 @@
+Instructions:
+- Test OTP login on Samsung[Andriod] and Apple [IOS] mobile.
+- [STRICT] Functional only — positive and negative
+- [MANDATORY] Include TC ID, Priority, Description, Precondition, Steps, Expected/Actual Result, Test Data
+- [CRITICAL] Mix of P1, P2, P3
+- [MANDATORY] Exactly 13 test cases
+- Then switch persona and review, adding comments
+
+Context:
+OTP login functionality for Amazon application when email id is not entered
+
+Example:
+TC-ID: TC001   Priority: P1
+Description: Verify OTP login is success when both user entered otp and registered mobile received otp matches 
+Precondition: App running in IOS; Internet is up and working in mobile.
+Steps: 1) Log in screen 2) Enter OTP 3) Click Login button
+Expected Result: Login succeeds; user able to checkout, for next time login new otp is used
+Test Data: OTP: 123456(valid 6 digit for 30 mins validity) , blank, same OTP entered twice, Retry, expired OTP, network failure
+
+Persona:
+- Generate: Mobile Testing QA Engineer, expert in functional testing
+- Review: Team Lead, reviewing the test cases
+
+Output Format:
+13 test cases in a table, followed by a short review summary and Team Lead comments.
+
+Tone:
+[STRICT] Professional tone in review comments and summary.
